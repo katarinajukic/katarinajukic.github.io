@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LV1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav" aria-label="Desktop Navigation">
+        <div class="logo">
+            <img src="assets/navbar/logo.png" alt="logo" loading="lazy">
+        </div>
+        <ul class="nav-links center-links" aria-label="Main Navigation">
+            <li><a href="#home" class="home-link">Home</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+        <ul class="nav-links" aria-label="Contact Navigation">
+            <li><button class="contact-button" onClick="location.href='#contact'">Contact me</button></li>
+        </ul>
+    </nav>    
+    <nav id="hamburger-nav" aria-label="Mobile Navigation">
+        <div class="logo">
+            <img src="assets/navbar/logo.png" alt="logo" loading="lazy">
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onClick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links" aria-label="Mobile Menu">
+                <li><a href="#home" class="home-link" onClick="toggleMenu()">Home</a></li>
+                <li><a href="#portfolio" onClick="toggleMenu()">Portfolio</a></li>
+                <li><a href="#aboutme" onClick="toggleMenu()">About me</a></li>
+                <li><a href="#testimonials" onClick="toggleMenu()">Testimonials</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="home" aria-label="Home Section">
+        <div class="section__container">
+            <img src="./assets/home/guy_first.png" alt="home guy profile picture" loading="lazy">
+            <div class="text-container">
+                <p class="section__text__p1">Hey, I am John</p>
+                <b class="diff-container">
+                    <span>I create </span>
+                    <span class="product-design">product design </span>
+                    <span>and brand experience</span>
+                </b>
+                <p class="section__text__p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Suspendisse varius enim in eros elementum tristique.</p>
+                <div>
+                    <button class="get-in-touch-button">Get In Touch</button>
+                </div>
+            </div>
+        </div>
+    </section>       
+    <section id="portfolio" aria-label="Portfolio Section">
+        <p class="section__text__p1 skills" aria-label="Skills">My skills</p>
+        <h1 class="diff-container skills" aria-label="Expertise">My Expertise</h1>
+        <div class="projects-details-container">
+            <div class="projects-container color-container" aria-label="Strategy & Direction">
+                <div class="article-container">
+                    <img src="./assets/portfolio/product-chain.png" alt="product" class="product-img" loading="lazy">
+                </div>
+                <h2 class="project-sub-title">Strategy & Direction</h2>
+                <p class="section__text__p2">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Suspendisse varius enim in eros<br> elementum tristique.</p>
+            </div>
+            <div class="projects-container color-container" aria-label="Branding & Logo">
+                <div class="article-container">
+                    <img src="./assets/portfolio/tag.png" alt="brand" class="brand-img" loading="lazy">
+                </div>
+                <h2 class="project-sub-title">Branding & Logo</h2>
+                <p class="section__text__p2">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Suspendisse varius enim in eros<br> elementum tristique.</p>
+            </div>
+            <div class="projects-container color-container" aria-label="UI & UX Design">
+                <div class="article-container">
+                    <img src="./assets/portfolio/feather-pen.png" alt="feather" class="feather-img" loading="lazy">
+                </div>
+                <h2 class="project-sub-title">UI & UX Design</h2>
+                <p class="section__text__p2">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Suspendisse varius enim in eros<br> elementum tristique.</p>
+            </div>
+            <div class="projects-container color-container" aria-label="Webflow Development">
+                <div class="article-container">
+                    <img src="./assets/portfolio/web.png" alt="webflow" class="webflow-img" loading="lazy">
+                </div>
+                <h2 class="project-sub-title">Webflow Development</h2>
+                <p class="section__text__p2">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Suspendisse varius enim in eros<br> elementum tristique.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-container" aria-label="About Section">
+        <div class="section__pic-container">
+            <img src="./assets/about/aboutmeguy.png" alt="profile picture" class="about-pic" loading="lazy">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1" aria-label="About Title">About</p>
+            <h1 class="title-about">About me</h1>
+            <p class="section__text__p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus massa sollicitudin amet augue. Nibh metus a semper purus mauris duis. Lorem eu neque, tristique quis duis. Nibh scelerisque ac adipiscing velit non nulla in amet pellentesque.</p>
+            <p class="section__text__p2">Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. Amet pellentesque sit pulvinar lorem mi a, euismod risus r.</p>
+        </div>
+    </section>  
+    <section id="projects" aria-label="Projects Section">
+        <div class="text-button">
+            <div class="text-container">
+                <p class="section__text__p1 skills" aria-label="Recent Projects">Recent Projects</p>
+                <h1 class="diff-container skills" aria-label="Portfolio Title">My Portfolio</h1>
+            </div>
+            <div class="social-button">
+                <img class="social-icon" alt="social icon" src="assets/project/socialvector.png" loading="lazy"/>
+                <div class="home" role="link" tabindex="0" aria-label="Visit My Dribbble">Visit My Dribbble</div>
+            </div>
+        </div>
+        <div class="cards-row">
+            <div class="card" aria-label="Project Ahuse">
+                <img class="placeholder-image" alt="first project" src="assets/project/first.png" loading="lazy"/>
+                <div class="content-drible">
+                    <div class="title">
+                        <b class="blog-title-heading">Ahuse</b>
+                        <div class="section__text__p2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <div class="subtit-content">
+                            <div class="subtitle-text">View In Dribbble</div>
+                            <img class="vector-icon" alt="" src="./assets/project/dribblevector.png" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" aria-label="Project App Dashboard">
+                <img class="placeholder-image" alt="second project" src="assets/project/second.png" loading="lazy"/>
+                <div class="content-drible">
+                    <div class="title">
+                        <b class="blog-title-heading">App Dashboard</b>
+                        <div class="section__text__p2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <div class="subtit-content">
+                            <div class="subtitle-text">View In Dribbble</div>
+                            <img class="vector-icon" alt="" src="./assets/project/dribblevector.png" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" aria-label="Project Easy Rent">
+                <img class="placeholder-image" alt="third project" src="assets/project/third.png" loading="lazy"/>
+                <div class="content-drible">
+                    <div class="title">
+                        <b class="blog-title-heading">Easy Rent</b>
+                        <div class="section__text__p2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <div class="subtit-content">
+                            <div class="subtitle-text">View In Dribbble</div>
+                            <img class="vector-icon" alt="" src="./assets/project/dribblevector.png" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section id="testimonials" aria-label="Testimonials Section">
+        <p class="section__text__p1 skills" aria-label="Clients Feedback">Clients Feedback</p>
+        <h1 class="diff-container skills" aria-label="Customer Testimonials">Customer testimonials</h1>
+        <div class="testimonials-content">
+            <div class="testimonials-column" aria-label="Testimonial 1">
+                <div class="stars">
+                    <img class="vector-icon3" alt="Star icon" src="assets/testimonials/vector-star.png" loading="lazy"/>
+                </div>
+                <div class="section__text__p2">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra."
+                </div>
+                <div class="test-avatar">
+                    <img class="avatar-image-icon" alt="avatar-img" src="assets/testimonials/avatar-first.png" loading="lazy"/>
+                    <div class="avatar-content">
+                        <div class="subtitle-text">Dianne Russell</div>
+                        <div class="description">Starbucks</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-column" aria-label="Testimonial 2">
+                <div class="stars">
+                    <img class="vector-icon3" alt="Star icon" src="assets/testimonials/vector-star.png" loading="lazy"/>
+                </div>
+                <div class="section__text__p2">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra."
+                </div>
+                <div class="test-avatar">
+                    <img class="avatar-image-icon" alt="avatar-img" src="assets/testimonials/avatar-third.png" loading="lazy"/>
+                    <div class="avatar-content">
+                        <div class="subtitle-text">Kristin Watson</div>
+                        <div class="description">Louis Vuitton</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-column" aria-label="Testimonial 3">
+                <div class="stars">
+                    <img class="vector-icon3" alt="Star icon" src="assets/testimonials/vector-star.png" loading="lazy"/>
+                </div>
+                <div class="section__text__p2">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra."
+                </div>
+                <div class="test-avatar">
+                    <img class="avatar-image-icon" alt="avatar-img" src="assets/testimonials/avatar-second.png" loading="lazy"/>
+                    <div class="avatar-content">
+                        <div class="subtitle-text">Kathryn Murphy</div>
+                        <div class="description">McDonald's</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section id="contact" aria-label="Contact Section">
+        <div class="text">
+            <p class="section__text__p1 contact" aria-label="Get in touch">Get in touch</p>
+            <h1 class="diff-container contact" aria-label="Contact Me">Contact me</h1>
+            <p class="section__text__p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+        <div class="form" aria-labelledby="contact-form-title">
+            <div class="inputs">
+                <div class="input" aria-labelledby="first-name">
+                    <div class="first-name">First name</div>
+                    <div class="input-1"></div>
+                </div>
+                <div class="input" aria-labelledby="last-name">
+                    <div class="first-name">Last name</div>
+                    <div class="input-1"></div>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input" aria-labelledby="email">
+                    <div class="first-name">Email</div>
+                    <div class="input-1"></div>
+                </div>
+                <div class="input" aria-labelledby="phone-number">
+                    <div class="first-name">Phone number</div>
+                    <div class="input-1"></div>
+                </div>
+            </div>
+            <div class="title1" aria-labelledby="topic-selection">
+                <div class="first-name">Choose a topic</div>
+                <div class="select-input">
+                    <div class="select-one">Select one...</div>
+                    <img class="icon" alt="Social icon" src="assets/contact/icon.png" loading="lazy"/>
+                </div>
+            </div>
+            <div class="title1" aria-labelledby="message-input">
+                <div class="first-name">Message</div>
+                <div class="input-2">
+                    <div class="select-one">Type your message...</div>
+                </div>
+            </div>
+            <div class="checkbox-button">
+                <div class="checkbox"></div>
+                <div class="home" aria-labelledby="terms-acceptance">I accept the terms</div>
+            </div>
+            <button class="submit-button" aria-label="Submit button">Submit</button>
+        </div>
+    </section>    
+    <footer class="footer" role="contentinfo" aria-label="Footer Section">
+        <div class="content">
+            <img class="frame-icon" alt="logo" src="assets/footer/Frame.png" loading="lazy"/>
+            <nav class="links" role="navigation" aria-label="Main navigation">
+                <div class="home">Home</div>
+                <div class="home">Portfolio</div>
+                <div class="home">About me</div>
+                <div class="home">Contact</div>
+                <div class="home">Testimonials</div>
+                <div class="home">Portfolio</div>
+            </nav>
+            <div class="social-links" role="navigation" aria-label="Social media links">
+                <img class="facebook-icon" alt="Facebook icon" src="assets/footer/Facebook.png" loading="lazy"/>
+                <img class="facebook-icon" alt="Instagram icon" src="assets/footer/Instagram.png" loading="lazy"/>
+                <img class="facebook-icon" alt="Twitter icon" src="assets/footer/Twitter.png" loading="lazy"/>
+                <img class="facebook-icon" alt="LinkedIn icon" src="assets/footer/LinkedIn.png" loading="lazy"/>
+            </div>
+        </div>
+        <div class="credits" role="contentinfo" aria-label="Footer credits">
+            <div class="divider"></div>
+            <div class="row">
+                <p>Made with love by Airdokan</p>
+                <nav class="footer-links" role="navigation" aria-label="Footer navigation">
+                    <div class="home">Privacy Policy</div>
+                    <div class="home">Terms of Service</div>
+                    <div class="home">Cookies Settings</div>
+                </nav>
+            </div>
+        </div>
+    </footer>    
+    <script src="script.js"></script>
+</body>
+</html>
